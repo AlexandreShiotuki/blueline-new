@@ -54,13 +54,36 @@ body {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#gallery:has(li:hover) li:not(:hover) {
+	opacity: .6;
+	scale: .98;
+  }
+
 .gallery-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 344px;
 	height: 230px;
 	border-radius: 20px;
-	color: #ffffff;
 	margin: 8px 8px 10px 8px;
 	background-color: #080D33;
+
+	transition: all .2s;
+}
+
+.stroke {
+	font-size: 30px;
+	text-shadow: 
+               -1px -1px 0px #000, 
+               -1px 1px 0px #000,                    
+                1px -1px 0px #000,                  
+                1px 0px 0px #000;
 }
 
 .accordion {
@@ -180,6 +203,17 @@ li {
 	.card {
 		width: 10rem;
 		height: auto
+	}
+}
+
+@media (max-width: 800px) {
+	#gallery {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.gallery-items {
+		text-align: end;
 	}
 }
 
