@@ -2,7 +2,9 @@
 <html lang="pt-br">
 
 <head>
-  <link rel="shortcut icon" href="https://static.vecteezy.com/ti/vetor-gratis/p1/4967284-detalhado-robo-em-hexagono-forma-simbolo-logo-design-vetor.jpg" type="image/x-icon">
+  <link rel="shortcut icon"
+    href="https://static.vecteezy.com/ti/vetor-gratis/p1/4967284-detalhado-robo-em-hexagono-forma-simbolo-logo-design-vetor.jpg"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,56 +16,74 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  
+
   <link rel="stylesheet" href="./style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-  </script>
-	<script src="./index.js" defer></script>
+    </script>
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close" id="close-btn">&times;</span>
+        <img src="https://live.staticflickr.com/65535/53289210972_4cb27fa618_n.jpg" alt="Popup Background Image">
+    </div>
+</div>
+
   <div class="header">
     <div class="anchorH">
       <a href="#accordionExample" class="aH">APRESENTAÇÃO</a>
       <a href="#mentors" class="aH">MENTORES</a>
       <a href="#comps" class="aH">COMPETIÇÕES</a>
-      <a href="#" class="aH off" onclick="disabled()">MATERIAIS</a>
+      <a href="#works" class="aH">MATERIAIS</a>
     </div>
     <div class="logoH">
-      <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/4967284-detalhado-robo-em-hexagono-forma-simbolo-logo-design-vetor.jpg" alt="" class="logo">
+      <img
+        src="https://static.vecteezy.com/ti/vetor-gratis/p1/4967284-detalhado-robo-em-hexagono-forma-simbolo-logo-design-vetor.jpg"
+        alt="" class="logo">
     </div>
   </div>
 
   <div class="container">
     <h1 class="h1">SOMOS A BLUELINE ROBÓTICA</h1>
-    
+
     <ul id="gallery">
       <div class="gallery-div">
-       <a href="https://flic.kr/s/aHBqjAZXtj" target="_blank"><li class="gallery-item firstItem" style="background-image: url(https://live.staticflickr.com/65535/53288113080_8b277ac423_w.jpg);"><span class="stroke">ROBÔS</span></li></a>
-       <a href="https://flic.kr/s/aHBqjB16Rf" target="_blank"><li class="gallery-item secondItem" style="background-image: url(https://live.staticflickr.com/65535/53288030144_b6a3ffdf95.jpg);"><span class="stroke">EVENTOS<br>E<br>VIAGENS</span></li></a>
+        <a href="https://flic.kr/s/aHBqjAZXtj" target="_blank">
+          <li class="gallery-item firstItem"
+            style="background-image: url(https://live.staticflickr.com/65535/53288113080_8b277ac423_w.jpg);"><span
+              class="stroke">ROBÔS</span></li>
+        </a>
+        <a href="https://flic.kr/s/aHBqjB16Rf" target="_blank">
+          <li class="gallery-item secondItem"
+            style="background-image: url(https://live.staticflickr.com/65535/53288030144_b6a3ffdf95.jpg);"><span
+              class="stroke">EVENTOS<br>E<br>VIAGENS</span></li>
+        </a>
       </div>
       <div class="gallery-div">
-        <a href="https://flic.kr/s/aHBqjB132L" target="_blank"><li class="gallery-item thirdItem" style="background-image: url(https://live.staticflickr.com/65535/53287908218_3db337b9d8_n.jpg);"><span class="stroke">COMPETIÇÕES</span></li></a>
-        <a href="https://flic.kr/s/aHBqjB12Zr" target="_blank"><li class="gallery-item fourthItem" style="background-image: url(https://live.staticflickr.com/65535/53287908223_dbd1fe5435.jpg);"><span class="stroke">AULAS</span></li></a>
+        <a href="https://flic.kr/s/aHBqjB132L" target="_blank">
+          <li class="gallery-item thirdItem"
+            style="background-image: url(https://live.staticflickr.com/65535/53287908218_3db337b9d8_n.jpg);"><span
+              class="stroke">COMPETIÇÕES</span></li>
+        </a>
+        <a href="https://flic.kr/s/aHBqjB12Zr" target="_blank">
+          <li class="gallery-item fourthItem"
+            style="background-image: url(https://live.staticflickr.com/65535/53287908223_dbd1fe5435.jpg);"><span
+              class="stroke">AULAS</span></li>
+        </a>
       </div>
     </ul>
-    
-    <!-- <i>
-	<input checked type="radio" name="s" style="background-image: url('https://live.staticflickr.com/65535/53287266981_041ef24664.jpg');" title="Alunos e professores">
-	<input type="radio" name="s" style="background-image: url('https://live.staticflickr.com/65535/52975834002_72e564968f_n.jpg');" title="Explicação sobre sensores e movimento">
-	<input type="radio" name="s" style="background-image: url('https://live.staticflickr.com/65535/52975825747_c75eb71aa1.jpg');" title="Construção de um semáforo usando arduíno">
-	<input type="radio" name="s" style="background-image: url('https://live.staticflickr.com/65535/52976867568_3b3e5f6eeb_n.jpg');" title="Aula sobre programação em bloco">
-	<input type="radio" name="s" style="background-image: url('https://live.staticflickr.com/65535/52976859068_7e88f910ca.jpg');" title="Arrecadação de dinheiro para inscrição da TBR">
-</i> -->
 
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        APRESENTAÇÃO
-      </button>
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            APRESENTAÇÃO
+          </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
@@ -85,9 +105,10 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-        OBJETIVOS DA EQUIPE
-      </button>
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            OBJETIVOS DA EQUIPE
+          </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
@@ -95,7 +116,7 @@
               <span class="titleUl">Missão</span>
               <li>
                 Projetar, construir e programar um robô independente capaz de resolver um
-                problema do mundo real.                
+                problema do mundo real.
               </li>
               <li>
                 Estudo de problemas ambientais para propor soluções inovadoras e
@@ -103,42 +124,42 @@
               </li>
 
               <span class="titleUl">Visão</span>
-             <li>
-              Aprendizado Contínuo nas áreas de tecnologia e Meio Ambiente
-             </li>
-             <li>
-              Reconhecer que a tecnologia está em constante evolução e a prática da
-              iniciação científica aumenta o engajamento na área acadêmica.
-             </li>
+              <li>
+                Aprendizado Contínuo nas áreas de tecnologia e Meio Ambiente
+              </li>
+              <li>
+                Reconhecer que a tecnologia está em constante evolução e a prática da
+                iniciação científica aumenta o engajamento na área acadêmica.
+              </li>
 
-             <span class="titleUl">Valores</span>
-             <li>Colaboração</li>
-             <li>Ética</li>
-             <li>Responsabilidade</li>
+              <span class="titleUl">Valores</span>
+              <li>Colaboração</li>
+              <li>Ética</li>
+              <li>Responsabilidade</li>
 
-             <span class="titleUl">Os membros da equipe devem:</span>
-             <li>
-              Apoiar-se mutuamente, compartilhar conhecimento, experiência, e trabalhar
-              juntos para alcançar os objetivos comuns.
-             </li>
-             <li>
-              Seguir padrões éticos elevados em todas as fases do projeto, incluindo
-              respeito pela propriedade intelectual, tratamento justo de colegas e
-              concorrentes, e considerações ambientais.
-             </li>
-             <li>
-              Assumir responsabilidade por suas ações/decisões, pelo uso de recursos,
-              cumprir prazos e ser transparente sobre os desafios enfrentados.
-             </li>
+              <span class="titleUl">Os membros da equipe devem:</span>
+              <li>
+                Apoiar-se mutuamente, compartilhar conhecimento, experiência, e trabalhar
+                juntos para alcançar os objetivos comuns.
+              </li>
+              <li>
+                Seguir padrões éticos elevados em todas as fases do projeto, incluindo
+                respeito pela propriedade intelectual, tratamento justo de colegas e
+                concorrentes, e considerações ambientais.
+              </li>
+              <li>
+                Assumir responsabilidade por suas ações/decisões, pelo uso de recursos,
+                cumprir prazos e ser transparente sobre os desafios enfrentados.
+              </li>
 
-             <span class="titleUl">Diretrizes</span>
-             <li>Inovação</li>
-             <li>Diversidade</li>
-             <li>Inclusão</li>
-             Encorajar a criatividade e a busca por soluções inovadoras é fundamental no
-             campo da robótica. A equipe deve estar aberta a novas ideias e abordagens,
-             incentivando a experimentação e a melhoria contínua. Valorizar a diversidade de
-             perspectivas.
+              <span class="titleUl">Diretrizes</span>
+              <li>Inovação</li>
+              <li>Diversidade</li>
+              <li>Inclusão</li>
+              Encorajar a criatividade e a busca por soluções inovadoras é fundamental no
+              campo da robótica. A equipe deve estar aberta a novas ideias e abordagens,
+              incentivando a experimentação e a melhoria contínua. Valorizar a diversidade de
+              perspectivas.
             </ul>
           </div>
         </div>
@@ -146,9 +167,10 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-        INTEGRANTES DA EQUIPE
-      </button>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            INTEGRANTES DA EQUIPE
+          </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
@@ -173,34 +195,35 @@
 
     <div class="cards">
       <div class="card bm" style="width: 20rem;">
-        <img src="https://live.staticflickr.com/65535/52976987123_c03b8c87d9_n.jpg" class="card-img-top cardm" alt="...">
+        <img src="https://live.staticflickr.com/65535/52976987123_c03b8c87d9_n.jpg" class="card-img-top cardm"
+          alt="...">
         <div class="card-body">
           <p class="card-text"><strong>Profª Malu</strong><br><br>
-   Professora de física e matemática da escola EE Prof. Amilcare Mattei. Técnica da equipe de robótica
+            Professora de física e matemática da escola EE Prof. Amilcare Mattei. Técnica da equipe de robótica
           </p>
         </div>
       </div>
 
       <div class="card bm" style="width: 20rem;">
-        <img src="https://live.staticflickr.com/65535/52976882230_43e4943a6f_n.jpg" class="card-img-top cardm" alt="...">
+        <img src="https://live.staticflickr.com/65535/52976882230_43e4943a6f_n.jpg" class="card-img-top cardm"
+          alt="...">
         <div class="card-body">
           <p class="card-text"><strong>Profº Lincoln</strong><br><br>
-    Professor de Sociologia da EE Prof. Amilcare Mattei. Orientador de Mérito Científico.
+            Professor de Sociologia da EE Prof. Amilcare Mattei. Orientador de Mérito Científico.
           </p>
         </div>
       </div>
 
       <div class="card bm" style="width: 20rem;">
-        <img src="https://live.staticflickr.com/65535/53286322487_429db1668d_n.jpg" class="card-img-top cardm" alt="...">
+        <img src="https://live.staticflickr.com/65535/53286322487_429db1668d_n.jpg" class="card-img-top cardm"
+          alt="...">
         <div class="card-body">
           <p class="card-text"><strong>Diretora Ana Dolores <br> Zuccolin de Mello</strong><br><br>
-    Diretora da escola EE Prof. Amilcare Mattei. Mentora da equipe de robótica
+            Diretora da escola EE Prof. Amilcare Mattei. Mentora da equipe de robótica
           </p>
         </div>
       </div>
     </div>
-
-
   </div>
 
   <div class="comps" id="comps">
@@ -208,42 +231,115 @@
 
     <div class="years">
       <div class="2022">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
-        style="background-image: url(data:image/png;base64,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);">
+        <button class="btn btn-dark btnComps" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+          style="background-image: url(data:image/png;base64,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);">
         </button>
-        
-        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+
+        <div class="offcanvas offcanvas-start w-75" data-bs-backdrop="true" tabindex="-1" id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel">TORNEIO BRASIL DE ROBÓTICA 2022</h5>
+            <h4 class="offcanvas-title" id="staticBackdropLabel">TORNEIO BRASIL DE ROBÓTICA 2022</h4>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <div>
-              <img src="https://live.staticflickr.com/65535/52976892414_8cf17d8024_n.jpg" alt="" id="tbr2022">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos repellendus est ad repellat fugit vitae doloribus iste inventore officia illum soluta hic minus totam animi sapiente quos quis ullam!</p>
+              <img src="https://live.staticflickr.com/65535/52976892399_61e3762a79.jpg" alt=""
+                class="imgOffCanvas img-fluid" id="tbr2022">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eos repellendus est ad repellat fugit
+                vitae doloribus iste inventore officia illum soluta hic minus totam animi sapiente quos quis ullam!</p>
+
+              <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">TORNEIO BRASIL DE ROBÓTICA 2023</h4>
+              <h5>EM BREVE!</h5>
             </div>
           </div>
         </div>
       </div>
 
       <div class="2023">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
-        style="background-image: url(data:image/png;base64,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);">
-        </button>
-        
-        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <button class="btn btn-dark btnComps" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+          style="background-image: url(data:image/png;base64,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);"></button>
+
+        <div class="offcanvas offcanvas-end w-75" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+            <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">OLIMPÍADA BRASILEIRA DE ROBÓTICA 2023</h4>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <div>
-              Teste
+              <img src="https://live.staticflickr.com/65535/53286299707_47573b06ce_b.jpg" alt=""
+                class="obr2023 img-fluid" id="firstPhotoObr">
+              <p>No dia 17/06/2023, a equipe Blueline participou da Etapa Regional em São José do Rio Preto, na UNORTE -
+                Centro Universitário do Norte de São Paulo, contando com duas
+                equipes, Blueline Masters e Blueline Strongs, onde ficamos em 6º e 18° lugar, respectivamente,
+                classificando a equipe Masters para a etapa Estadual.
+              </p>
+
+              <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">ETAPA ESTADUAL</h4>
+              <img src="https://live.staticflickr.com/65535/53287654170_498bded209.jpg" alt="" class="obr2023 img-fluid"
+                id="secondPhotoObr">
+              <p>No dia 19/08/2023, a Blueline Masters participou da etapa regional em São Bernardo do Campo, na FEI -
+                Campus São Bernardo do Campo, sendo a única escola pública da região
+                a participar dessa etapa. Dessa vez, a equipe Strongs ficou na torcida. Os Masters infelizmente não
+                classificaram para a etapa nacional, ficando em xº lugar, porém, adquirimos
+                muito conhecimento observando os robôs das outras equipes participantes.
+              </p>
+              <img src="https://live.staticflickr.com/65535/53286299572_aa5d890560_n.jpg" alt=""
+                style="padding-bottom: 1rem;">
+              <img src="https://live.staticflickr.com/65535/53286299577_330255e1e4_n.jpg" alt=""
+                style="padding-bottom: 1rem;">
+              <img src="https://live.staticflickr.com/65535/53287438678_f22cae2d9e_n.jpg" alt=""
+                style="padding-bottom: 1rem;">
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="works" id="works">
+    <div>
+      <h1 style="margin-bottom: 4rem; margin-top: 4rem;">ACESSE NOSSOS TRABALHOS DA TBR DE 2023</h1>
+    </div>
+
+    <div class="workCards">
+      <div class="workCard">
+        <div class="card materialsCard" style="width: 18rem; margin-bottom: 3rem;">
+          <img src="https://live.staticflickr.com/65535/53289149462_fc1958aba7_z.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ORGANIZAÇÃO E MÉTODO</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://drive.google.com/file/d/1wDDQc0atSqbpCUS7dYYpCI6smQbJzC4U/view" class="btn btn-primary" target="_blank">ACESSE O MATERIAL</a>
+          </div>
+        </div>
+      </div>
+      <div class="workCard">
+        <div class="card materialsCard" style="width: 18rem; margin-bottom: 3rem;">
+          <img src="https://live.staticflickr.com/65535/53289149462_fc1958aba7_z.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ENGENHARIA E TECNOLOGIA</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://drive.google.com/file/d/13H-nQQ5Iu44s2e0sEhwfC0dkwprEyA6J/view" class="btn btn-primary" target="_blank">ACESSE O MATERIAL</a>
+          </div>
+        </div>
+      </div>
+      <div class="workCard">
+        <div class="card materialsCard" style="width: 18rem; margin-bottom: 3rem;">
+          <img src="https://live.staticflickr.com/65535/53289149462_fc1958aba7_z.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MÉRITO <br>CIENTÍFICO</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="https://docs.google.com/document/d/1I3ehx3pj6xh5WzmcEm9cy0jvu0w9HzvW5WNGh7eno68/edit?usp=sharing" class="btn btn-primary" target="_blank">ACESSE O MATERIAL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="footer">
@@ -252,22 +348,51 @@
 
       <div class="socialsAnchor">
         <a href="https://www.instagram.com/amblueline/" class="anchorF" target="_blank">Instagram Blueline</a>
-        <a href="https://www.instagram.com/amilcarematteiofc/" class="anchorF" target="_blank">Instagram Amilcare Mattei</a>
+        <a href="https://www.instagram.com/amilcarematteiofc/" class="anchorF" target="_blank">Instagram Amilcare
+          Mattei</a>
       </div>
     </div>
 
     <div class="madeBy">
-        <h3>Feito por:</h3>
+      <h3>Feito por:</h3>
 
       <div class="icons">
-        <a href="https://github.com/AlexandreShiotuki" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512" class="icon-item"><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-        <a href="https://www.instagram.com/alexshiotuki.dev/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="icon-item"><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-        <a href="https://www.linkedin.com/in/alexandre-shiotuki-bb20a3240/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="icon-item"><style>svg{fill:#ffffff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-        
-        
-        
+        <a href="https://github.com/AlexandreShiotuki" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            height="1em" viewBox="0 0 496 512" class="icon-item">
+            <style>
+              svg {
+                fill: #ffffff
+              }
+            </style>
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+          </svg></a>
+        <a href="https://www.instagram.com/alexshiotuki.dev/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            height="1em" viewBox="0 0 448 512" class="icon-item">
+            <style>
+              svg {
+                fill: #ffffff
+              }
+            </style>
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/alexandre-shiotuki-bb20a3240/" target="_blank"><svg
+            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="icon-item">
+            <style>
+              svg {
+                fill: #ffffff
+              }
+            </style>
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg></a>
+
+
+
       </div>
     </div>
   </div>
 </body>
+
 </html>

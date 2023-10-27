@@ -8,6 +8,39 @@ body {
 	font-family: 'Sora', sans-serif;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('background-image.jpg') no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,14 +54,6 @@ body {
   text-decoration: none;
   color: #F3F3F7;
   padding: 0px 6px 0px 6px;
-}
-
-.off {
-	color: #656568;
-}
-
-.off:hover {
-	cursor: default;
 }
 
 .logo {
@@ -54,7 +79,7 @@ body {
 	list-style: none;
 }
 
-a {
+.gallery-div > a {
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -145,18 +170,28 @@ li {
 }
 
 #tbr2022 {
-	width: 250px;
-	height: 140px;
+	width: 50%;
+	height: auto;
 }
 
 .offcanvas > .offcanvas-body > div > p {
 	padding-top: 1rem;
 }
 
-.btn {
+#secondPhotoObr {
+	width: 600px;
+	height: 320px; 
+}
+
+#firstPhotoObr {
+	width: 80%;
+}
+
+.btnComps {
 	width: 400px;
 	height: 200px;
 	border-radius: 40px;
+	margin-bottom: 2rem;
 
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -164,7 +199,23 @@ li {
 }
 
 .comps {
+	min-height: 40vh;
 	text-align: center;
+}
+
+.works {
+	padding: 0 3rem 0 3rem;
+	text-align: center;
+}
+
+.workCards {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.workCard {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .footer {
@@ -207,7 +258,12 @@ li {
 }
 
 @media (max-width: 1040px) {
-	.btn {
+	#secondPhotoObr {
+		width: 80%;
+		height: 280px;
+	}
+
+	.btnComps {
 		width: 250px;
 		height: 140px;
 	}
@@ -215,6 +271,13 @@ li {
 	.card {
 		width: 10rem;
 		height: auto
+	}
+	
+	.workCards {
+		flex-wrap: wrap;
+		text-align: center;
+		text-align: center;
+		justify-content: center;
 	}
 }
 
@@ -241,7 +304,7 @@ li {
 		flex-direction: column;
 	}
 
-	.btn:nth-child(1) {
+	.btnComps:nth-child(1) {
 		margin-bottom: 1.4rem;
 	}
 
