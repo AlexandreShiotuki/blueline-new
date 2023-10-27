@@ -139,25 +139,32 @@ li {
 	padding: 1rem;
 }
 
+.years {
+	display: flex;
+	justify-content: space-around;
+}
+
+#tbr2022 {
+	width: 250px;
+	height: 140px;
+}
+
+.offcanvas > .offcanvas-body > div > p {
+	padding-top: 1rem;
+}
+
+.btn {
+	width: 400px;
+	height: 200px;
+	border-radius: 40px;
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
 .comps {
 	text-align: center;
-}
-
-.compsCards {
-	display: flex;
-	justify-content: space-evenly;
-	text-align: center;
-}
-
-.card {
-	font-family: 'Sora', sans-serif;
-	background-color: #D9D9D9;
-	border-radius: 20px;
-	margin-bottom: 2rem;
-}
-
-.cardc {
-	height: 300px;
 }
 
 .footer {
@@ -200,6 +207,11 @@ li {
 }
 
 @media (max-width: 1040px) {
+	.btn {
+		width: 250px;
+		height: 140px;
+	}
+
 	.card {
 		width: 10rem;
 		height: auto
@@ -225,6 +237,14 @@ li {
 }
 
 @media (max-width: 690px) {
+	.years {
+		flex-direction: column;
+	}
+
+	.btn:nth-child(1) {
+		margin-bottom: 1.4rem;
+	}
+
 	.header {
 		font-size: 13px;
 		padding: 0 2rem 0 2rem;
